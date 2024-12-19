@@ -10,7 +10,7 @@ def meta_ai():
 
     if prompt:
 
-        response = ai.prompt(message=prompt)
+        response = ai.prompt("hi there")
         return jsonify(response=response)
     else:
         return jsonify(error="No prompt provided"), 400
